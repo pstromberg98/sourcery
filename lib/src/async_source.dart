@@ -2,13 +2,6 @@ import 'dart:async';
 
 import 'package:sourcery/sourcery.dart';
 
-void main() {
-  AsyncSourceFamily(
-    sourceFn: (String id) => Future.value(1),
-    initialValue: 2,
-  );
-}
-
 /// Function that wraps the underlying source.
 typedef AsyncSourceFn<T> = Future<T> Function();
 
